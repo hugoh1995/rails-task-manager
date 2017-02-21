@@ -1,0 +1,14 @@
+<table class="table table-bordered">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Creation date</th>
+  </tr>
+  <tr>
+    <td><%= @task.name %></td>
+    <td><%= @task.description %></td>
+    <td><%= @task.created_at %></td>
+    <td><%= link_to "Edit", edit_task_path %></td>
+  </tr>
+</table>
+<%= link_to "Back to task list", tasks_path %>
